@@ -25,7 +25,10 @@ export function Logo({
   tagline,
 }: LogoProps) {
   return (
-    <Link href={href} className={cn("inline-flex items-center gap-2.5", className)}>
+    <Link
+      href={href}
+      className={cn("inline-flex items-center gap-2.5", className)}
+    >
       <span className="flex flex-col">
         <OptimizedImage
           src={src}
@@ -36,7 +39,7 @@ export function Logo({
           className={cn("h-8 w-auto sm:h-9", imageClassName)}
         />
         {tagline ? (
-          <span className="mt-1 text-[10px] font-medium leading-tight text-primary">
+          <span className="mt-1 text-[10px] leading-tight font-medium text-primary">
             {tagline}
           </span>
         ) : null}

@@ -32,7 +32,7 @@ export default function Custom404Page() {
             <h2 className="text-xl font-medium text-foreground">
               Page Not Found
             </h2>
-            <p className="mx-auto mt-2 max-w-[250px] text-sm font-normal leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-2 max-w-[250px] text-sm leading-relaxed font-normal text-muted-foreground">
               We couldn&apos;t find the page you&apos;re looking for. It might
               have been removed or you may have mistyped the address.
             </p>

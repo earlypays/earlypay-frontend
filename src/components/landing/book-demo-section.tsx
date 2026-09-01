@@ -8,19 +8,23 @@ export function BookDemoSection() {
   return (
     <section
       id="book-demo"
-      className="scroll-mt-24 relative overflow-hidden bg-[#1a1f1e]"
+      className="relative scroll-mt-24 overflow-hidden bg-[#1a1f1e]"
     >
       <div className="grid min-h-105 lg:min-h-120 lg:grid-cols-3">
-        <div className=" space-y-4 col-span-2 relative z-10 flex flex-col items-center text-center justify-center px-5 py-16 sm:px-10 lg:px-16 xl:px-24 ">
-          <h2 className=" font-serif text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-[3.5rem]">
+        <div className="relative z-10 col-span-2 flex flex-col items-center justify-center space-y-4 px-5 py-16 text-center sm:px-10 lg:px-16 xl:px-24">
+          <h2 className="font-serif text-3xl leading-tight font-bold text-white sm:text-4xl lg:text-[3.5rem]">
             You&apos;ve earned it. Access it when you need it.
           </h2>
-          <p className="text-base leading-relaxed text-white sm:text-xl font-normal">
+          <p className="text-base leading-relaxed font-normal text-white sm:text-xl">
             Get more flexibility with your earned wages and take care of
             life&apos;s important expenses before payday.
           </p>
           <div className="">
-            <Button asChild size="lg" className="rounded-lg p-2.5 text-[16px] font-semibold text-[#FFFFFF] font-sans">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-lg p-2.5 font-sans text-[16px] font-semibold text-[#FFFFFF]"
+            >
               <Link href="/login">Book a Demo</Link>
             </Button>
           </div>

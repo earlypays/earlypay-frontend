@@ -13,11 +13,11 @@ export function FaqSection() {
   return (
     <section className="bg-white py-4">
       <Container className="">
-        <div className="text-center space-y-4">
+        <div className="space-y-4 text-center">
           <h2 className="font-georgia text-3xl font-bold text-heading sm:text-[56px]">
             Frequently Asked Questions (FAQ)
           </h2>
-          <p className="text-sm text-muted-foreground sm:text-2xl font-normal">
+          <p className="text-sm font-normal text-muted-foreground sm:text-2xl">
             Please refer to the frequently asked questions for your quick help
           </p>
         </div>
@@ -36,7 +36,7 @@ export function FaqSection() {
                   aria-expanded={open}
                   onClick={() => setOpenIndex(open ? -1 : index)}
                 >
-                  <span className="text-sm font-semibold text-heading sm:text-[16px] font-sans">
+                  <span className="font-sans text-sm font-semibold text-heading sm:text-[16px]">
                     {item.question}
                   </span>
                   <ChevronDown

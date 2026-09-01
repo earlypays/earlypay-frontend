@@ -40,11 +40,7 @@ function PartnerMarquee({
         )}
       >
         {[0, 1].map((copy) => (
-          <ul
-            key={copy}
-            className="flex gap-4 pr-4"
-            aria-hidden={copy === 1}
-          >
+          <ul key={copy} className="flex gap-4 pr-4" aria-hidden={copy === 1}>
             {partners.map((partner) => (
               <li key={`${copy}-${partner.name}`}>
                 <PartnerCard {...partner} />

@@ -35,22 +35,26 @@ export function AudienceSection() {
     <section id="about" className="scroll-mt-24 bg-background py-16 lg:py-24">
       <Container>
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="max-w-109.75 w-full">
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#E6F3F3] text-[#008B8B] p-2.5 text-[16px] font-normal ">
+          <div className="w-full max-w-109.75">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#E6F3F3] p-2.5 text-[16px] font-normal text-[#008B8B]">
               <span className="size-2 rounded-full bg-primary" />
               Your earnings, when you need them.
             </span>
-            <h2 className="mt-5 font-sans text-3xl font-semibold uppercase leading-tight tracking-tight text-heading sm:text-[20px] lg:text-[24px]">
+            <h2 className="mt-5 font-sans text-3xl leading-tight font-semibold tracking-tight text-heading uppercase sm:text-[20px] lg:text-[24px]">
               One platform, more financial flexibility
             </h2>
           </div>
           <div className="">
-            <p className="text-[16px] font-sans leading-relaxed text-muted-foreground font-normal sm:text-[20px]">
+            <p className="font-sans text-[16px] leading-relaxed font-normal text-muted-foreground sm:text-[20px]">
               A simple and secure platform that helps employees access their
               earned wages before payday, pay essential bills, and manage their
               money with greater flexibility.
             </p>
-            <Button asChild size="lg" className="mt-4 rounded-md p-2.5 text-[16px] font-semibold text-[#FFFFFF]">
+            <Button
+              asChild
+              size="lg"
+              className="mt-4 rounded-md p-2.5 text-[16px] font-semibold text-[#FFFFFF]"
+            >
               <Link href="/login">
                 Get started for free
                 <ArrowRight className="size-4" />
@@ -66,8 +70,10 @@ export function AudienceSection() {
               id={card.id}
               className="scroll-mt-28 space-y-4 rounded-md border border-black/5 bg-white p-4 shadow-[0_12px_40px_rgba(16,70,64,0.08)] sm:p-6.25"
             >
-              <h3 className="text-[24px] font-semibold text-muted-foreground">{card.title}</h3>
-              <p className=" max-w-md text-[10px] font-normal leading-relaxed text-muted-foreground sm:text-[16px]">
+              <h3 className="text-[24px] font-semibold text-muted-foreground">
+                {card.title}
+              </h3>
+              <p className="max-w-md text-[10px] leading-relaxed font-normal text-muted-foreground sm:text-[16px]">
                 {card.description}
               </p>
               <Link

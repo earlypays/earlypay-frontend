@@ -54,7 +54,7 @@ export function HowItWorksSection() {
     offset: ["start 80px", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], [0, -maxX]);
+  const x = useTransform(scrollYProgress, [0, 0.88], [0, -maxX]);
 
   useMotionValueEvent(scrollYProgress, "change", (value) => {
     const next = Math.min(
@@ -70,7 +70,7 @@ export function HowItWorksSection() {
       id="how-it-works"
       className={cn(
         "relative bg-hero",
-        reduceMotion ? "py-16 lg:py-24" : "h-[320vh]",
+        reduceMotion ? "py-16 lg:py-24" : "h-[520vh]",
       )}
     >
       <div
@@ -82,11 +82,11 @@ export function HowItWorksSection() {
         )}
       >
         <Container className="shrink-0">
-          <div className="max-w-145 font-georgia space-y-4">
+          <div className="max-w-145 space-y-4 font-georgia">
             <h2 className="font-serif text-3xl font-bold text-[#003F3F] sm:text-4xl lg:text-[3.2rem]">
               How EarlyPay works
             </h2>
-            <p className=" text-base text-muted-foreground sm:text-2xl">
+            <p className="text-base text-muted-foreground sm:text-2xl">
               Your journey with EarlyPay starts here! Just follow these easy
               steps
             </p>
@@ -97,18 +97,20 @@ export function HowItWorksSection() {
           ref={viewportRef}
           className="relative mt-8 overflow-hidden lg:mt-10"
         >
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-linear-to-l from-hero to-transparent sm:w-20 lg:w-28" />
-
           <motion.div
             ref={trackRef}
             style={reduceMotion ? undefined : { x }}
-            className={cn(
-              "flex w-max will-change-transform",
-              reduceMotion
-                ? "pl-5 sm:pl-8 lg:pl-12"
-                : "pl-[58vw] sm:pl-[62vw] lg:pl-[65vw]",
-            )}
+            className="flex w-max will-change-transform"
           >
+            <div
+              aria-hidden
+              className={cn(
+                "shrink-0",
+                reduceMotion
+                  ? "w-5 sm:w-8 lg:w-12"
+                  : "w-[58vw] sm:w-[62vw] lg:w-[65vw]",
+              )}
+            />
             <ol className="relative flex w-max list-none gap-10 pb-4 [--step:240px] sm:gap-16 sm:[--step:280px] lg:gap-24 lg:[--step:320px]">
               <div
                 aria-hidden
@@ -137,7 +139,7 @@ export function HowItWorksSection() {
                     >
                       {step.number}
                     </div>
-                    <h3 className="mt-3.5 font-semibold text-heading text-[20px]">
+                    <h3 className="mt-3.5 text-[20px] font-semibold text-heading">
                       {step.title}
                     </h3>
                     <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -147,6 +149,15 @@ export function HowItWorksSection() {
                 );
               })}
             </ol>
+            <div
+              aria-hidden
+              className={cn(
+                "shrink-0",
+                reduceMotion
+                  ? "w-5 sm:w-8 lg:w-12"
+                  : "w-[70vw] sm:w-[72vw] lg:w-[75vw]",
+              )}
+            />
           </motion.div>
         </div>
       </div>

@@ -35,7 +35,8 @@ export const CONTROL_FEATURES = [
   {
     number: "02",
     title: "Withdraw to Your Bank",
-    description: "Send your available funds directly to your linked bank account.",
+    description:
+      "Send your available funds directly to your linked bank account.",
   },
   {
     number: "03",

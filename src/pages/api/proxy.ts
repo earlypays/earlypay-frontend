@@ -199,8 +199,9 @@ export default async function handler(
     });
 
     if (isBlobRequest) {
-      const contentType =
-        String(response.headers["content-type"] ?? "application/octet-stream");
+      const contentType = String(
+        response.headers["content-type"] ?? "application/octet-stream",
+      );
       const contentDisposition = response.headers["content-disposition"];
       const contentLength = response.headers["content-length"];
 

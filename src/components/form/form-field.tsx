@@ -18,7 +18,7 @@ const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
     <div ref={ref} className={cn("space-y-2", className)} {...props}>
       <Label
         htmlFor={htmlFor}
-        className="text-foreground font-normal text-base"
+        className="text-base font-normal text-foreground"
       >
         {label}
       </Label>

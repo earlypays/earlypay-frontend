@@ -18,18 +18,22 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
           >
-            <div className=" space-y-5 mb-[40px]">
-            <h1 className="font-georgia text-[2.35rem] leading-[1.15] lg:text-[55px] lg:leading-17.5 font-bold tracking-tight text-heading">
-              Access your earned wages before payday.
-            </h1>
-            <p className=" font-sans max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
-              You&apos;ve worked for it, so why wait until payday? EarlyPay gives
-              eligible employees access to up to 50% of their earned wages,
-              helping you handle important expenses when you need to.
-            </p>
+            <div className="mb-[40px] space-y-5">
+              <h1 className="font-georgia text-[2.35rem] leading-[1.15] font-bold tracking-tight text-heading lg:text-[55px] lg:leading-17.5">
+                Access your earned wages before payday.
+              </h1>
+              <p className="max-w-lg font-sans text-base leading-relaxed text-muted-foreground sm:text-lg">
+                You&apos;ve worked for it, so why wait until payday? EarlyPay
+                gives eligible employees access to up to 50% of their earned
+                wages, helping you handle important expenses when you need to.
+              </p>
             </div>
-            <div className=" flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button asChild size="xl" className="rounded-lg p-2.5 text-[16px] font-semibold">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button
+                asChild
+                size="xl"
+                className="rounded-lg p-2.5 text-[16px] font-semibold"
+              >
                 <Link href="/login">
                   Get started for free
                   <ArrowRight className="size-4" />
@@ -39,12 +43,12 @@ export function HeroSection() {
                 asChild
                 variant="outlineDark"
                 size="xl"
-                className="rounded-lg p-2.5 text-[16px] font-semibold text-muted-foreground border-[#008B8B]"
+                className="rounded-lg border-[#008B8B] p-2.5 text-[16px] font-semibold text-muted-foreground"
               >
                 <Link href="/#how-it-works">See How it works</Link>
               </Button>
             </div>
-            <p className="mt-4 text-[16px] text-muted-foreground font-normal">
+            <p className="mt-4 text-[16px] font-normal text-muted-foreground">
               Start for free, cancel anytime.
             </p>
           </motion.div>

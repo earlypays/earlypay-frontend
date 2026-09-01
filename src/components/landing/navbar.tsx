@@ -54,14 +54,18 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-            <Button asChild size="lg" className="rounded-md px-2.5 font-semibold text-[16px]">
+          <Button
+            asChild
+            size="lg"
+            className="rounded-md px-2.5 text-[16px] font-semibold"
+          >
             <Link href="/login">Get started for free</Link>
           </Button>
           <Button
             asChild
             variant="outline"
             size="lg"
-            className="rounded-md px-2.5 text-muted-foreground border-[#008B8B] text-[16px] font-semibold"
+            className="rounded-md border-[#008B8B] px-2.5 text-[16px] font-semibold text-muted-foreground"
           >
             <Link href="/login">Login</Link>
           </Button>

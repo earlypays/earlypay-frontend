@@ -48,13 +48,13 @@ export function Modal({
 
   return (
     <div
-      className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden bg-black/40 p-2 sm:p-4"
+      className="fixed inset-0 z-50 overflow-x-hidden overflow-y-auto bg-black/40 p-2 sm:p-4"
       onClick={onClose}
     >
       <div className="flex min-h-[calc(100dvh-1rem)] items-center justify-center py-2 sm:min-h-[calc(100dvh-2rem)] sm:py-4">
         <div
           className={cn(
-            "flex w-full max-w-[calc(100vw-1rem)] min-w-0 max-h-[calc(100dvh-1rem)] flex-col overflow-x-hidden rounded-2xl bg-card p-4 shadow-xl outline-none sm:max-h-[90dvh] sm:p-6",
+            "flex max-h-[calc(100dvh-1rem)] w-full max-w-[calc(100vw-1rem)] min-w-0 flex-col overflow-x-hidden rounded-2xl bg-card p-4 shadow-xl outline-none sm:max-h-[90dvh] sm:p-6",
             widthClass,
           )}
           onClick={(event) => event.stopPropagation()}
@@ -74,7 +74,7 @@ export function Modal({
               <X className="size-4" />
             </button>
           </div>
-          <div className="min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain [scrollbar-gutter:stable] [-webkit-overflow-scrolling:touch]">
+          <div className="min-h-0 min-w-0 flex-1 [scrollbar-gutter:stable] overflow-x-hidden overflow-y-auto overscroll-contain [-webkit-overflow-scrolling:touch]">
             {children}
           </div>
         </div>

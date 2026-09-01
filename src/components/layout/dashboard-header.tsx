@@ -41,7 +41,7 @@ export function DashboardHeader({ onToggleSidebar }: DashboardHeaderProps) {
             className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border/40 bg-primary/10"
             aria-hidden
           >
-            <span className="text-xs font-bold uppercase text-primary/60">
+            <span className="text-xs font-bold text-primary/60 uppercase">
               {displayName.charAt(0)}
             </span>
           </div>
@@ -63,7 +63,7 @@ export function DashboardHeader({ onToggleSidebar }: DashboardHeaderProps) {
               aria-hidden
               onClick={() => setProfileOpen(false)}
             />
-            <div className="fixed right-2 top-17 z-50 w-48 min-w-48 rounded-lg border border-border bg-card py-1 shadow-lg sm:absolute sm:right-0 sm:top-full sm:mt-1">
+            <div className="fixed top-17 right-2 z-50 w-48 min-w-48 rounded-lg border border-border bg-card py-1 shadow-lg sm:absolute sm:top-full sm:right-0 sm:mt-1">
               {user?.email ? (
                 <div className="border-b border-border px-3 py-2">
                   <p className="truncate text-sm font-medium text-foreground">
