@@ -1,6 +1,7 @@
 import { Lightbulb, Wallet } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
+import Image from "next/image";
 
 const SUMMARY_ROWS = [
   {
@@ -68,9 +69,9 @@ export function EmployeesAccessSection() {
             </div>
 
             <ul className="mt-6">
-              {SUMMARY_ROWS.map((row, index) => (
+              {SUMMARY_ROWS.map((row) => (
                 <li key={row.label}>
-                  <div className="flex w-full items-center gap-3.25">
+                  <div className="flex w-full items-start gap-3.25">
                     <img
                       src={row.icon}
                       alt=""
@@ -87,40 +88,50 @@ export function EmployeesAccessSection() {
                           {row.value}
                         </span>
                       </div>
-                      {index > 0 ? (
-                        <div className="flex justify-start py-1.5" aria-hidden>
-                          <img
-                            src="/landing/employees/arrow-down.svg"
-                            alt=""
-                            width={24}
-                            height={24}
-                            className="size-6"
-                          />
-                        </div>
-                      ) : null}
+                      <div className="flex justify-start py-1.5" aria-hidden>
+                        <img
+                          src="/landing/employees/arrow-down.svg"
+                          alt=""
+                          width={24}
+                          height={24}
+                          className="size-6"
+                        />
+                      </div>
                     </div>
                   </div>
                 </li>
               ))}
             </ul>
 
-            <div className="mt-5 rounded-md bg-[#F4F7F8] p-4 sm:p-5">
-              <div className="flex items-center justify-between gap-3">
-                <p className="flex items-center gap-2 text-sm font-medium text-[#008B8B]">
-                  <Wallet className="size-4" />
-                  Available to access
-                </p>
-                <p className="text-lg font-bold text-[#008B8B]">₦44,000</p>
-              </div>
-              <p className="mt-1 text-xs text-muted-foreground">
-                This is your current available balance
-              </p>
-              <div className="mt-4 h-2.5 overflow-hidden rounded-full bg-white">
-                <div className="h-full w-[30%] rounded-full bg-[#008B8B]" />
-              </div>
-              <div className="mt-2 flex items-center justify-between text-xs">
-                <span className="font-medium text-[#008B8B]">30% used</span>
-                <span className="text-muted-foreground">70% Remaining</span>
+            <div className="mt-5 space-y-4 rounded-md bg-[#EAECED] p-4 sm:p-5">
+              <div className="flex items-start gap-2">
+                <Image
+                  src="/landing/employees/Wallet.svg"
+                  alt="Wallet"
+                  width={44}
+                  height={44}
+                />
+
+                <div className="flex-1 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <p className="text-sm font-semibold text-[#008B8B] sm:text-xl">
+                      Available to access
+                    </p>
+                    <p className="text-lg font-semibold text-[#008B8B] sm:text-2xl">
+                      ₦44,000
+                    </p>
+                  </div>
+                  <p className="text-xs font-normal text-muted-foreground sm:text-base">
+                    This is your current available balance
+                  </p>
+                  <div className="h-2 overflow-hidden rounded-full bg-white">
+                    <div className="h-full w-[30%] rounded-full bg-[#008B8B]" />
+                  </div>
+                  <div className="flex items-center justify-between font-normal text-base">
+                    <span className=" text-[#008B8B]">30% used</span>
+                    <span className=" text-muted-foreground">70% Remaining</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
