@@ -12,7 +12,7 @@ const AUDIENCE_CARDS = [
     title: "For Employees",
     description:
       "Access a portion of your earned wages before payday and pay for essential services with ease.",
-    href: "/#how-it-works",
+    href: "/employees",
     linkLabel: "Explore Employee Benefits",
     image: "/landing/employees-office.jpg",
     imageAlt:

@@ -33,7 +33,7 @@ function FooterIcon({
 
 const QUICK_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/#employees", label: "For Employees" },
+  { href: "/employees", label: "For Employees" },
   { href: "/#employers", label: "For Employers" },
 ];
 

@@ -7,3 +7,10 @@ export { BookDemoSection } from "./book-demo-section";
 export { ControlFeaturesSection } from "./control-features-section";
 export { FaqSection } from "./faq-section";
 export { Footer } from "./footer";
+export {
+  EmployeesHeroSection,
+  EmployeesFlexibilitySection,
+  EmployeesBalanceWaysSection,
+  EmployeesAccessSection,
+  EmployeesCtaSection,
+} from "./employees";

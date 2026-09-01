@@ -80,6 +80,50 @@ export const FAQ_ITEMS = [
   },
 ] as const;
 
+export const EMPLOYEE_FEATURES = [
+  {
+    title: "Access Your Earned Wages",
+    description:
+      "Access up to 50% of your eligible earned wages during your current pay cycle.",
+    tone: "dark",
+  },
+  {
+    title: "Withdraw to Your Bank",
+    description:
+      "Transfer your available funds directly to your linked bank account whenever you need access to cash.",
+    tone: "light",
+  },
+  {
+    title: "Pay Essential Bills",
+    description:
+      "Use your available balance to take care of important everyday expenses without waiting until payday.",
+    tone: "light",
+  },
+  {
+    title: "Stay in Control",
+    description:
+      "Keep track of your earned wages, available balance and transaction history from one simple dashboard.",
+    tone: "dark",
+  },
+] as const;
+
+export const EMPLOYEE_BALANCE_WAYS = [
+  {
+    title: "Withdraw to Your Bank",
+    description:
+      "Need cash? Request a withdrawal and send your available funds directly to your linked bank account.",
+    image: "/landing/employees/withdraw-phone.png",
+    imageAlt: "Man smiling while checking his phone",
+  },
+  {
+    title: "Pay Your Essential Bills",
+    description:
+      "Use your available EarlyPay balance to pay for supported everyday services directly from the platform.",
+    image: "/landing/employees/pay-bills.png",
+    imageAlt: "Woman paying a bill on a tablet with a card",
+  },
+] as const;
+
 export const BILL_PARTNERS = [
   { name: "EEDC", src: "/partners/eedc.png" },
   { name: "IBEDC", src: "/partners/ibedc.png" },

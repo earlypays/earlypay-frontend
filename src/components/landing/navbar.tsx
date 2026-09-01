@@ -50,7 +50,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-hero/95 backdrop-blur-sm">
+      <header className="sticky top-0 z-50 bg-white">
         <Container className="flex h-18 items-center justify-between gap-4 lg:h-20">
           <Logo />
 
@@ -67,7 +67,7 @@ export function Navbar() {
                   className={cn(
                     "relative text-[16px] font-semibold transition-colors hover:text-[#008B8B]",
                     active
-                      ? "text-[#008B8B] after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-[#008B8B]"
+                      ? "text-[#008B8B] after:h-px after:w-full after:bg-[#008B8B]"
                       : "text-muted-foreground",
                   )}
                 >
