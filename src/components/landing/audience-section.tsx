@@ -23,7 +23,7 @@ const AUDIENCE_CARDS = [
     title: "For Employers",
     description:
       "Give your employees greater financial flexibility while maintaining visibility and control over payroll advances.",
-    href: "/#book-demo",
+    href: "/employers",
     linkLabel: "Explore Employer Benefits",
     image: "/landing/employers-office.jpg",
     imageAlt: "Two colleagues meeting at a desk in a bright office",

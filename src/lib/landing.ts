@@ -124,6 +124,86 @@ export const EMPLOYEE_BALANCE_WAYS = [
   },
 ] as const;
 
+export const EMPLOYER_SUPPORT_FEATURES = [
+  {
+    title: "Support Employee Wellbeing",
+    description:
+      "Give your employees more flexibility to manage important expenses before payday.",
+    icon: "/landing/employers/icons/wellbeing.png",
+  },
+  {
+    title: "Maintain Full Visibility",
+    description:
+      "Monitor employee eligibility, earned wages, accessed amounts, and transactions from one place.",
+    icon: "/landing/employers/icons/visibility.png",
+  },
+  {
+    title: "Keep Payroll Organized",
+    description:
+      "Track employee advances throughout the pay cycle and simplify end-of-cycle reconciliation.",
+    icon: "/landing/employers/icons/payroll.png",
+  },
+  {
+    title: "Built Around Your Business",
+    description:
+      "Manage payroll, pay cycles, attendance, and employee access based on your organization's needs.",
+    icon: "/landing/employers/icons/business.png",
+  },
+] as const;
+
+export const EMPLOYER_SETUP_STEPS = [
+  {
+    number: "01",
+    title: "Set Up Your Organization",
+    description:
+      "Create your organization, configure your team, and set up your pay cycle.",
+  },
+  {
+    number: "02",
+    title: "Add Your Employees",
+    description:
+      "Manage employee accounts and configure eligibility for earned wage access.",
+  },
+  {
+    number: "03",
+    title: "Provide Payroll Information",
+    description:
+      "Upload payroll information or configure employee salary details to support earned-wage calculations.",
+  },
+  {
+    number: "04",
+    title: "Enable Employee Access",
+    description:
+      "Confirm eligibility so employees can access a portion of the wages they have already earned.",
+  },
+] as const;
+
+export const EMPLOYER_MANAGE_ITEMS = [
+  "Add and manage employees",
+  "Approve employee eligibility",
+  "Suspend or restrict access when necessary",
+  "View employee activity",
+  "Monitor earned wages",
+  "Track accessed amounts",
+] as const;
+
+export const EMPLOYER_ATTENDANCE_FEATURES = [
+  {
+    title: "Geo-Fenced Locations",
+    description: "Configure approved office locations for attendance.",
+  },
+  {
+    title: "Clock In & Clock Out",
+    description:
+      "Enable employees to record attendance directly through EarlyPay.",
+  },
+  {
+    title: "Attendance Insights",
+    description:
+      "Monitor employee attendance and support attendance-based earned wage calculations.",
+  },
+] as const;
+
 export const BILL_PARTNERS = [
   { name: "EEDC", src: "/partners/eedc.png" },
   { name: "IBEDC", src: "/partners/ibedc.png" },

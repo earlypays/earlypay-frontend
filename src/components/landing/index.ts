@@ -14,3 +14,11 @@ export {
   EmployeesAccessSection,
   EmployeesCtaSection,
 } from "./employees";
+export {
+  EmployersHeroSection,
+  EmployersSupportSection,
+  EmployersSetupSection,
+  EmployersManageSection,
+  EmployersAttendanceSection,
+  EmployersCtaSection,
+} from "./employers";
