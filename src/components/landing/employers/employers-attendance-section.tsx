@@ -32,7 +32,7 @@ export function EmployersAttendanceSection() {
                     <h3 className="font-sans text-sm font-semibold text-[#003F3F] sm:text-base">
                       {feature.title}
                     </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:text-base font-normal">
+                    <p className="mt-1 text-sm leading-relaxed font-normal text-muted-foreground sm:text-base">
                       {feature.description}
                     </p>
                   </div>

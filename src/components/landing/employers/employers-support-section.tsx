@@ -33,7 +33,10 @@ export function EmployersSupportSection() {
 
           <ul className="grid w-full flex-1 gap-x-5 gap-y-8 sm:grid-cols-2 lg:min-h-133">
             {EMPLOYER_SUPPORT_FEATURES.map((feature) => (
-              <li key={feature.title} className="space-y-4 text-left max-w-99.5  w-full">
+              <li
+                key={feature.title}
+                className="w-full max-w-99.5 space-y-4 text-left"
+              >
                 <img
                   src={feature.icon}
                   alt=""
@@ -44,7 +47,7 @@ export function EmployersSupportSection() {
                 <h3 className="font-sans text-lg font-semibold text-[#48484A] lg:text-2xl">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-justify leading-relaxed text-[#48484A] sm:text-xl font-normal font-sans">
+                <p className="text-justify font-sans text-sm leading-relaxed font-normal text-[#48484A] sm:text-xl">
                   {feature.description}
                 </p>
               </li>

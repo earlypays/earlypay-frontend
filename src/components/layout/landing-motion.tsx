@@ -30,7 +30,9 @@ function AosSync() {
   const lenis = useLenis();
 
   useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     AOS.init({
       disable: reduce,
       duration: 750,

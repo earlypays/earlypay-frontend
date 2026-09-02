@@ -26,7 +26,7 @@ export function EmployersManageSection() {
             <h2 className="font-georgia text-3xl leading-tight font-bold text-[#003F3F] sm:text-4xl lg:text-[3.5rem]">
               Manage your employees with ease.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#48484A] sm:text-xl font-sans">
+            <p className="mt-4 font-sans text-base leading-relaxed text-[#48484A] sm:text-xl">
               Keep your employee information organized and maintain control over
               who can access earned wages.
             </p>
@@ -54,7 +54,7 @@ export function EmployersManageSection() {
               className="mt-8 inline-flex items-center gap-3 text-base font-semibold text-[#008B8B] hover:opacity-80"
             >
               <span className="flex size-4 items-center justify-center rounded-full border border-[#008B8B] text-[#008B8B]">
-                <ArrowRight className="size-3 text-[#008B8B] font-bold" />
+                <ArrowRight className="size-3 font-bold text-[#008B8B]" />
               </span>
               Get started for free
             </Link>
