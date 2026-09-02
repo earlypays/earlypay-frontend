@@ -39,7 +39,7 @@ const QUICK_LINKS = [
 
 const COMPANY_LINKS = [
   { href: "/#about", label: "About Us" },
-  { href: "/#book-demo", label: "Book a Demo" },
+  { href: "/book-demo", label: "Book a Demo" },
   { href: "/#about", label: "Terms of Use" },
   { href: "/#about", label: "Privacy Policy" },
 ];

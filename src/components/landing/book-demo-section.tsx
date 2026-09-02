@@ -26,7 +26,7 @@ export function BookDemoSection() {
               size="lg"
               className="rounded-lg p-2.5 font-sans text-[16px] font-semibold text-[#FFFFFF]"
             >
-              <Link href="/login">Book a Demo</Link>
+              <Link href="/book-demo">Book a Demo</Link>
             </Button>
           </div>
         </div>
