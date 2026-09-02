@@ -127,9 +127,9 @@ export function EmployeesAccessSection() {
                   <div className="h-2 overflow-hidden rounded-full bg-white">
                     <div className="h-full w-[30%] rounded-full bg-[#008B8B]" />
                   </div>
-                  <div className="flex items-center justify-between font-normal text-base">
-                    <span className=" text-[#008B8B]">30% used</span>
-                    <span className=" text-muted-foreground">70% Remaining</span>
+                  <div className="flex items-center justify-between text-base font-normal">
+                    <span className="text-[#008B8B]">30% used</span>
+                    <span className="text-muted-foreground">70% Remaining</span>
                   </div>
                 </div>
               </div>
