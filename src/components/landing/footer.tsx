@@ -46,7 +46,7 @@ const COMPANY_LINKS = [
 
 export function Footer() {
   return (
-    <footer className="bg-footer text-white">
+    <footer className="bg-footer text-white" data-aos="fade-up">
       <Container className="py-16 lg:py-24">
         <div className="flex flex-col gap-12 sm:flex-row sm:flex-wrap sm:justify-between lg:flex-nowrap lg:items-start">
           <div className="w-full max-w-80 shrink-0">

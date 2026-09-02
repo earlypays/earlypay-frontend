@@ -5,7 +5,7 @@ import { EMPLOYEE_BALANCE_WAYS } from "@/lib/landing";
 
 export function EmployeesBalanceWaysSection() {
   return (
-    <section className="bg-background">
+    <section className="bg-background" data-aos="fade-up">
       <Container>
         <div className="mx-auto max-w-208.5 space-y-4 text-center">
           <h2 className="font-georgia text-3xl leading-tight font-bold text-[#003F3F] sm:text-4xl lg:text-[3.2rem]">

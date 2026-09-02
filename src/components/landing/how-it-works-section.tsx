@@ -81,7 +81,7 @@ export function HowItWorksSection() {
             : "sticky top-18 h-[calc(100dvh-4.5rem)] lg:top-20 lg:h-[calc(100dvh-5rem)]",
         )}
       >
-        <Container className="shrink-0">
+        <Container className="shrink-0" data-aos="fade-up">
           <div className="max-w-145 space-y-4 font-georgia">
             <h2 className="font-serif text-3xl font-bold text-[#003F3F] sm:text-4xl lg:text-[3.2rem]">
               How EarlyPay works

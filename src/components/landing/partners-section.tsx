@@ -55,7 +55,7 @@ function PartnerMarquee({
 
 export function PartnersSection() {
   return (
-    <section className="bg-background py-16 lg:py-24">
+    <section className="bg-background py-16 lg:py-24" data-aos="fade-up">
       <Container>
         <div className="space-y-4 text-center">
           <h2 className="font-georgia text-[46px] font-bold text-[#003F3F] sm:text-[56px]">

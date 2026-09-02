@@ -1,5 +1,3 @@
-import { Check } from "lucide-react";
-
 import { Container } from "@/components/ui/container";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { IMAGE_QUALITY_SHARP } from "@/lib/image-quality";
@@ -7,7 +5,7 @@ import { EMPLOYER_ATTENDANCE_FEATURES } from "@/lib/landing";
 
 export function EmployersAttendanceSection() {
   return (
-    <section className="bg-background py-8 lg:py-16">
+    <section className="bg-background py-8 lg:py-16" data-aos="fade-up">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -20,17 +18,21 @@ export function EmployersAttendanceSection() {
               location verification.
             </p>
 
-            <ul className="mt-8 space-y-6">
+            <ul className="mt-8 space-y-4">
               {EMPLOYER_ATTENDANCE_FEATURES.map((feature) => (
                 <li key={feature.title} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#E6F3F3] text-[#008B8B]">
-                    <Check className="size-3.5" strokeWidth={2.75} />
-                  </span>
+                  <img
+                    src="/landing/employers/icons/checkmark-badge.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="mt-0.5 size-6 shrink-0"
+                  />
                   <div>
-                    <h3 className="font-sans text-base font-semibold text-[#003F3F] sm:text-lg">
+                    <h3 className="font-sans text-sm font-semibold text-[#003F3F] sm:text-base">
                       {feature.title}
                     </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:text-base font-normal">
                       {feature.description}
                     </p>
                   </div>

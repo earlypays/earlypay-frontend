@@ -11,7 +11,7 @@ export function FaqSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="bg-white py-4">
+    <section className="bg-white py-4" data-aos="fade-up">
       <Container className="">
         <div className="space-y-4 text-center">
           <h2 className="font-georgia text-3xl font-bold text-heading sm:text-[56px]">

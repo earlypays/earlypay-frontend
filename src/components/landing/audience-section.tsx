@@ -32,7 +32,11 @@ const AUDIENCE_CARDS = [
 
 export function AudienceSection() {
   return (
-    <section id="about" className="scroll-mt-24 bg-background py-16 lg:py-24">
+    <section
+      id="about"
+      className="scroll-mt-24 bg-background py-16 lg:py-24"
+      data-aos="fade-up"
+    >
       <Container>
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="w-full max-w-109.75">

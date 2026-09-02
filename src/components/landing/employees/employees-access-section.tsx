@@ -23,7 +23,7 @@ const SUMMARY_ROWS = [
 
 export function EmployeesAccessSection() {
   return (
-    <section className="bg-background py-16 lg:py-24">
+    <section className="bg-background py-16 lg:py-24" data-aos="fade-up">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>

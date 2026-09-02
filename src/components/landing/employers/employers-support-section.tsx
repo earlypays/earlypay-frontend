@@ -5,7 +5,7 @@ import { EMPLOYER_SUPPORT_FEATURES } from "@/lib/landing";
 
 export function EmployersSupportSection() {
   return (
-    <section className="bg-background py-16 lg:py-16">
+    <section className="bg-background py-16 lg:py-16" data-aos="fade-up">
       <Container>
         <div className="mx-auto w-full max-w-217 space-y-4 text-center">
           <h2 className="mx-auto w-full max-w-157 font-georgia text-3xl leading-tight font-bold text-[#003F3F] sm:text-4xl lg:text-[3.2rem]">

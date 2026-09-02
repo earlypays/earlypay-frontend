@@ -3,7 +3,7 @@ import { CONTROL_FEATURES } from "@/lib/landing";
 
 export function ControlFeaturesSection() {
   return (
-    <section className="bg-background py-8 lg:py-16">
+    <section className="bg-background py-8 lg:py-16" data-aos="fade-up">
       <Container>
         <div className="mx-auto max-w-172.25 space-y-4 text-center">
           <h2 className="font-georgia text-3xl font-bold text-[#003F3F] sm:text-4xl lg:text-[3.2rem]">

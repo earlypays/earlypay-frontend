@@ -7,7 +7,7 @@ import { IMAGE_QUALITY_PHOTO } from "@/lib/image-quality";
 
 export function EmployeesCtaSection() {
   return (
-    <section className="overflow-x-hidden bg-[#003F3F] py-10 lg:py-16">
+    <section className="overflow-x-hidden bg-[#003F3F] py-10 lg:py-16" data-aos="fade-up">
       <Container>
         <div className="relative mx-auto flex min-h-112.5 w-full max-w-310 flex-col overflow-hidden rounded-xl bg-[#112F39] lg:flex-row">
           <div className="relative z-10 flex w-full min-w-0 flex-col justify-center px-5 py-10 sm:px-8 lg:max-w-xl lg:shrink-0 lg:px-12 lg:py-12">

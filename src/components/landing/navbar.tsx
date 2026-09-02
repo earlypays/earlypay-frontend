@@ -65,7 +65,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "relative text-[16px] font-semibold transition-colors hover:text-[#008B8B]",
+                    "relative text-[16px] font-semibold transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-[#008B8B]",
                     active
                       ? "text-[#008B8B] after:h-px after:w-full after:bg-[#008B8B]"
                       : "text-muted-foreground",
@@ -124,7 +124,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "rounded-lg px-3 py-2.5 text-sm font-medium transition-colors hover:bg-primary/10",
+                    "rounded-lg px-3 py-2.5 text-sm font-medium transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-primary/10",
                     active ? "text-[#008B8B]" : "text-muted-foreground",
                   )}
                   onClick={() => setOpen(false)}

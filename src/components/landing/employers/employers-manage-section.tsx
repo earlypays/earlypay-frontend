@@ -1,40 +1,32 @@
 import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { IMAGE_QUALITY_PHOTO } from "@/lib/image-quality";
 import { EMPLOYER_MANAGE_ITEMS } from "@/lib/landing";
 
-function FeatureCheck() {
-  return (
-    <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#E6F3F3] text-[#008B8B]">
-      <Check className="size-3.5" strokeWidth={2.75} />
-    </span>
-  );
-}
-
 export function EmployersManageSection() {
   return (
-    <section className="bg-background py-16 lg:py-24">
+    <section className="bg-background py-16 lg:py-24" data-aos="fade-up">
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-xl lg:aspect-[5/6]">
+        <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
+          <div className="relative aspect-[505/546] w-full max-w-[505px] shrink-0 overflow-hidden">
             <OptimizedImage
               src="/landing/employers/manage-keyboard.png"
               alt="Employer smiling at a desk while managing work on a computer"
               fill
               quality={IMAGE_QUALITY_PHOTO}
               className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="505px"
             />
           </div>
 
-          <div>
-            <h2 className="font-georgia text-3xl leading-tight font-bold text-[#003F3F] sm:text-4xl lg:text-[3.2rem]">
+          <div className="w-full flex-1">
+            <h2 className="font-georgia text-3xl leading-tight font-bold text-[#003F3F] sm:text-4xl lg:text-[3.5rem]">
               Manage your employees with ease.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-[#48484A] sm:text-xl font-sans">
               Keep your employee information organized and maintain control over
               who can access earned wages.
             </p>
@@ -43,9 +35,15 @@ export function EmployersManageSection() {
               {EMPLOYER_MANAGE_ITEMS.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-sm font-medium text-[#003F3F] sm:text-base"
+                  className="flex items-start gap-1 text-sm font-medium text-[#003F3F] sm:text-base"
                 >
-                  <FeatureCheck />
+                  <img
+                    src="/landing/employers/icons/checkmark-badge.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="mt-0.5 size-6 shrink-0"
+                  />
                   <span>{item}</span>
                 </li>
               ))}
@@ -55,8 +53,8 @@ export function EmployersManageSection() {
               href="/login"
               className="mt-8 inline-flex items-center gap-3 text-base font-semibold text-[#008B8B] hover:opacity-80"
             >
-              <span className="flex size-8 items-center justify-center rounded-full bg-[#008B8B] text-white">
-                <ArrowRight className="size-4" />
+              <span className="flex size-4 items-center justify-center rounded-full border border-[#008B8B] text-[#008B8B]">
+                <ArrowRight className="size-3 text-[#008B8B] font-bold" />
               </span>
               Get started for free
             </Link>

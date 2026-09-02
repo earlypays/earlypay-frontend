@@ -7,6 +7,7 @@ export function EmployeesFlexibilitySection() {
     <section
       id="how-it-works"
       className="scroll-mt-24 bg-background py-8 lg:py-16"
+      data-aos="fade-up"
     >
       <Container>
         <div className="mx-auto max-w-215.75 space-y-4 text-center">
