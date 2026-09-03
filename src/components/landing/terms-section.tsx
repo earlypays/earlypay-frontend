@@ -104,22 +104,31 @@ export function TermsSection() {
             </article>
 
             <aside className="order-first lg:sticky lg:top-28 lg:order-last">
-              <h2 className="font-sans text-lg font-semibold text-muted-foreground sm:text-xl">
+              <h2 className="font-sans text-lg font-semibold text-[#48484A] sm:text-xl">
                 Table of contents
               </h2>
-              <ol className="mt-5 space-y-3 font-sans text-sm text-muted-foreground sm:text-base">
-                {TERMS_SECTIONS.map((section, index) => (
-                  <li key={section.id}>
-                    <a
-                      href={`#${section.id}`}
-                      className="transition-colors hover:text-[#008B8B]"
-                    >
-                      {index + 1}. {section.title}
-                    </a>
-                  </li>
-                ))}
-              </ol>
-              <div className="mt-8 border-t border-[#E6E6E6] pt-5">
+              <div className="relative mt-5">
+                <ol
+                  data-lenis-prevent
+                  className="max-h-48 space-y-4 overflow-y-auto overscroll-contain font-sans text-sm text-[#48484A] sm:text-base"
+                >
+                  {TERMS_SECTIONS.map((section, index) => (
+                    <li key={section.id}>
+                      <a
+                        href={`#${section.id}`}
+                        className="block transition-colors hover:text-[#008B8B]"
+                      >
+                        {index + 1}. {section.title}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-linear-to-t from-white to-transparent"
+                />
+              </div>
+              <div className="mt-6 border-t border-[#E6E6E6] pt-5">
                 <a
                   href="#top"
                   className="inline-flex items-center gap-2 font-sans text-sm font-medium text-[#008B8B] hover:opacity-80 sm:text-base"
