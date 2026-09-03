@@ -6,6 +6,7 @@ export type LoginResponse = {
     email: string;
     first_name?: string;
     last_name?: string;
+    employee_id?: string;
     [key: string]: unknown;
   };
 };

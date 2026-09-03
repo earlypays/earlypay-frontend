@@ -7,11 +7,14 @@ export const LANDING_NAV = [
 ] as const;
 
 export const DASHBOARD_NAV = [
-  { href: "/dashboard", label: "Dashboard" },
-  { href: "/dashboard/employees", label: "Employees" },
-  { href: "/dashboard/wage-access", label: "Wage Access" },
-  { href: "/dashboard/payroll", label: "Payroll" },
-  { href: "/dashboard/transactions", label: "Transactions" },
+  { href: "/dashboard", label: "Overview" },
+  { href: "/dashboard/attendance", label: "Attendance History" },
+  { href: "/dashboard/withdraw", label: "Withdraw Fund" },
+  { href: "/dashboard/bills", label: "Pay Bills" },
+  { href: "/dashboard/transactions", label: "Transaction History" },
+] as const;
+
+export const DASHBOARD_ACCOUNT_NAV = [
   { href: "/dashboard/settings", label: "Settings" },
 ] as const;
 

@@ -1,12 +1,10 @@
-export default function WageAccessPage() {
-  return (
-    <div className="space-y-2">
-      <h1 className="font-serif text-2xl font-bold text-heading">
-        Wage Access
-      </h1>
-      <p className="text-sm text-muted-foreground">
-        This module is scaffolded and will be built next.
-      </p>
-    </div>
-  );
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
+export default function WageAccessRedirectPage() {
+  const router = useRouter();
+  useEffect(() => {
+    router.replace("/dashboard/withdraw");
+  }, [router]);
+  return null;
 }

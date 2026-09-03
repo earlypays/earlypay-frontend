@@ -18,14 +18,14 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
   }, [router]);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-background">
+    <div className="flex h-screen overflow-hidden bg-[#F4F7F6]">
       <div className="hidden md:block">
         <DashboardSidebar />
       </div>
 
       {isSidebarOpen ? (
         <div className="fixed inset-0 z-40 flex md:hidden">
-          <div className="w-64">
+          <div className="h-full">
             <DashboardSidebar
               onNavigate={() => setIsSidebarOpen(false)}
               showClose
@@ -44,7 +44,7 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
         <DashboardHeader
           onToggleSidebar={() => setIsSidebarOpen((prev) => !prev)}
         />
-        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-muted/30 p-4 md:p-6">
+        <main className="flex-1 overflow-x-hidden overflow-y-auto p-4 md:p-6">
           {children}
         </main>
       </div>
