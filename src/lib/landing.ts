@@ -172,9 +172,15 @@ export const EMPLOYER_SETUP_STEPS = [
   },
   {
     number: "04",
-    title: "Enable Employee Access",
+    title: "Employees Access What They've Earned",
     description:
-      "Confirm eligibility so employees can access a portion of the wages they have already earned.",
+      "Eligible employees can access up to 50% of their earned wages through EarlyPay.",
+  },
+  {
+    number: "05",
+    title: "Reconcile on Payday",
+    description:
+      "Get a clear report of employee earnings, amounts accessed, fees, and net salary payable.",
   },
 ] as const;
 

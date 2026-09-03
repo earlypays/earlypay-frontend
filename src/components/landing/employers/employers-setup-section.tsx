@@ -70,7 +70,7 @@ export function EmployersSetupSection() {
       id="how-it-works"
       className={cn(
         "relative bg-hero",
-        reduceMotion ? "py-16 lg:py-24" : "h-[520vh]",
+        reduceMotion ? "py-16 lg:py-24" : "h-[640vh]",
       )}
     >
       <div

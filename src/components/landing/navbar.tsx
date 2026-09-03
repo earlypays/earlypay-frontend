@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/layout/logo";
 import { LANDING_NAV } from "@/lib/routes";
 import { cn } from "@/lib/utils";
+
+const MENU_EASE = [0.22, 1, 0.36, 1] as const;
 
 function isActiveHref(pathname: string, hash: string, href: string) {
   if (href === "/") {
@@ -108,42 +111,63 @@ export function Navbar() {
         </Container>
       </header>
 
-      {open ? (
-        <div
-          id="mobile-menu"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Menu"
-          className="fixed inset-x-0 top-18 bottom-0 z-40 overflow-y-auto bg-hero lg:hidden"
-        >
-          <Container className="flex flex-col gap-1 py-6">
-            {LANDING_NAV.map((item) => {
-              const active = isActiveHref(router.pathname, hash, item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={cn(
-                    "rounded-lg px-3 py-2.5 text-sm font-medium transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-primary/10",
-                    active ? "text-[#008B8B]" : "text-muted-foreground",
-                  )}
+      <AnimatePresence>
+        {open ? (
+          <motion.div
+            key="mobile-menu"
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Menu"
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "100%" }}
+            transition={{ duration: 0.4, ease: MENU_EASE }}
+            className="fixed inset-0 z-60 flex flex-col overflow-hidden rounded-t-2xl bg-hero lg:hidden"
+          >
+            <div className="bg-white">
+              <Container className="flex h-18 items-center justify-between gap-4">
+                <Logo />
+                <button
+                  type="button"
+                  className="inline-flex size-10 cursor-pointer items-center justify-center rounded-lg border border-[#C5C5C5] text-heading hover:bg-primary/10"
+                  aria-label="Close menu"
                   onClick={() => setOpen(false)}
                 >
-                  {item.label}
-                </Link>
-              );
-            })}
-            <div className="mt-3 flex flex-col gap-2">
-              <Button asChild size="lg" className="w-full">
-                <Link href="/login">Get started for free</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="w-full">
-                <Link href="/login">Login</Link>
-              </Button>
+                  <X className="size-5" />
+                </button>
+              </Container>
             </div>
-          </Container>
-        </div>
-      ) : null}
+
+            <Container className="flex flex-1 flex-col gap-1 overflow-y-auto py-8">
+              {LANDING_NAV.map((item) => {
+                const active = isActiveHref(router.pathname, hash, item.href);
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                      "rounded-lg px-3 py-3 text-base font-medium transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-primary/10",
+                      active ? "text-[#008B8B]" : "text-muted-foreground",
+                    )}
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+              <div className="mt-5 flex flex-col gap-3">
+                <Button asChild size="lg" className="w-full">
+                  <Link href="/login">Get started for free</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="w-full">
+                  <Link href="/login">Login</Link>
+                </Button>
+              </div>
+            </Container>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </>
   );
 }
