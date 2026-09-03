@@ -86,7 +86,7 @@ export function Navbar() {
               size="lg"
               className="rounded-md px-2.5 text-[16px] font-semibold"
             >
-              <Link href="/login">Get started for free</Link>
+              <Link href="/signup">Get started for free</Link>
             </Button>
             <Button
               asChild
@@ -158,7 +158,7 @@ export function Navbar() {
               })}
               <div className="mt-5 flex flex-col gap-3">
                 <Button asChild size="lg" className="w-full">
-                  <Link href="/login">Get started for free</Link>
+                  <Link href="/signup">Get started for free</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="w-full">
                   <Link href="/login">Login</Link>

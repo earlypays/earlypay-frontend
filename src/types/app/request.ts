@@ -3,6 +3,13 @@ export type LoginRequest = {
   password: string;
 };
 
+export type RegisterRequest = {
+  organization_name: string;
+  email: string;
+  phone: string;
+  password: string;
+};
+
 export type PasswordResetCodeRequest = {
   email: string;
 };

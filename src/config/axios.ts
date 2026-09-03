@@ -6,6 +6,7 @@ function isPublicAuthRequestUrl(url: string): boolean {
   return (
     url.includes("api/auth/login") ||
     url.includes("api%2Fauth%2Flogin") ||
+    url.includes("api/auth/register") ||
     url.includes("password/reset") ||
     url.includes("password%2Freset")
   );
@@ -43,7 +44,11 @@ axios.interceptors.response.use(
 
     if (typeof window !== "undefined") {
       const path = window.location.pathname;
-      if (!path.startsWith("/login") && !path.startsWith("/forgot-password")) {
+      if (
+        !path.startsWith("/login") &&
+        !path.startsWith("/forgot-password") &&
+        !path.startsWith("/signup")
+      ) {
         sessionStorage.setItem("redirectPath", path + window.location.search);
         window.location.href = "/login";
       }

@@ -17,7 +17,7 @@ const nataSans = Nata_Sans({
   adjustFontFallback: false,
 });
 
-const STANDALONE_PATHS = ["/login", "/forgot-password", "/404"];
+const STANDALONE_PATHS = ["/login", "/signup", "/forgot-password", "/404"];
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
