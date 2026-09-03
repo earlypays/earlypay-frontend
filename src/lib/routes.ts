@@ -2,7 +2,7 @@ export const LANDING_NAV = [
   { href: "/", label: "Home" },
   { href: "/employees", label: "For Employees" },
   { href: "/employers", label: "For Employers" },
-  { href: "/#about", label: "About" },
+  { href: "/about", label: "About" },
   { href: "/book-demo", label: "Book a Demo" },
 ] as const;
 

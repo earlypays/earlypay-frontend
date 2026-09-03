@@ -22,7 +22,7 @@ export function ControlFeaturesSection() {
               <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-[#003F3F] text-2xl font-semibold text-white">
                 {feature.number}
               </span>
-              <h3 className="mt-6 font-sans text-lg font-semibold text-[#48484A] lg:text-2xl">
+              <h3 className="mt-6 font-sans text-lg font-semibold text-muted-foreground lg:text-2xl">
                 {feature.title}
               </h3>
               <p className="mt-4 font-sans text-[16px] leading-relaxed text-muted-foreground">

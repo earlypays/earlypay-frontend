@@ -61,7 +61,7 @@ export function PartnersSection() {
           <h2 className="font-georgia text-[46px] font-bold text-[#003F3F] sm:text-[56px]">
             Your earned wages can do more.
           </h2>
-          <p className="text-[16px] font-normal text-[#48484A] sm:text-[20px]">
+          <p className="text-[16px] font-normal text-muted-foreground sm:text-[20px]">
             Use your available EarlyPay balance to take care of important
             everyday expenses.
           </p>

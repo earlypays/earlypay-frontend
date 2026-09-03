@@ -62,31 +62,31 @@ export function BookDemoContactSection() {
   return (
     <>
       <div className="bg-hero">
-        <Container className="flex h-30 items-center gap-2 font-sans text-[16px] leading-6 text-[#48484A]">
+        <Container className="flex h-30 items-center gap-2 font-sans text-[16px] leading-6 text-muted-foreground">
           <Link
             href="/"
-            className="font-normal text-[#48484A]/50 transition-colors hover:text-[#48484A]"
+            className="font-normal text-muted-foreground/50 transition-colors hover:text-muted-foreground"
           >
             Home
           </Link>
-          <ChevronRight className="size-4 shrink-0 text-[#48484A]" />
+          <ChevronRight className="size-4 shrink-0 text-muted-foreground" />
           <span className="font-semibold">Book a Demo</span>
         </Container>
       </div>
 
-      <section className="bg-white  py-10 lg:py-16" data-aos="fade-up">
-        <Container className="max-w-283 mx-auto">
+      <section className="bg-white py-10 lg:py-16" data-aos="fade-up">
+        <Container className="mx-auto max-w-283">
           <div className="grid w-full min-w-0 items-center gap-10 overflow-hidden rounded-xl bg-white p-2 shadow-[0_12px_40px_rgba(16,70,64,0.08)] sm:p-3 lg:grid-cols-[minmax(0,384px)_minmax(0,1fr)] lg:gap-16 lg:p-5">
             <div className="flex h-auto w-full min-w-0 flex-col gap-16 lg:h-107.75 lg:max-w-[384px]">
               <div className="flex items-start gap-4">
                 <MailCheck className="mt-0.5 size-6 shrink-0 text-[#008B8B]" />
                 <div>
-                  <h2 className="font-sans text-lg sm:text-2xl font-semibold text-[#003F3F]">
+                  <h2 className="font-sans text-lg font-semibold text-[#003F3F] sm:text-2xl">
                     Email
                   </h2>
                   <a
                     href={`mailto:${FOOTER_EMAIL}`}
-                    className="mt-1 block text-muted-foreground hover:text-[#008B8B] font-normal text-xs sm:text-base"
+                    className="mt-1 block text-xs font-normal text-muted-foreground hover:text-[#008B8B] sm:text-base"
                   >
                     {FOOTER_EMAIL}
                   </a>
@@ -96,13 +96,13 @@ export function BookDemoContactSection() {
               <div className="flex items-start gap-4">
                 <Phone className="mt-0.5 size-6 shrink-0 text-[#008B8B]" />
                 <div>
-                  <h2 className="font-sans text-lg sm:text-2xl font-semibold text-[#003F3F]">
+                  <h2 className="font-sans text-lg font-semibold text-[#003F3F] sm:text-2xl">
                     Call
                   </h2>
                   <p className="mt-1 text-muted-foreground">{CONTACT_HOURS}</p>
                   <a
                     href={CONTACT_PHONE_HREF}
-                    className="mt-1 block text-muted-foreground hover:text-[#008B8B] font-normal text-xs sm:text-base"
+                    className="mt-1 block text-xs font-normal text-muted-foreground hover:text-[#008B8B] sm:text-base"
                   >
                     {CONTACT_PHONE}
                   </a>
@@ -113,10 +113,10 @@ export function BookDemoContactSection() {
                 <div className="flex items-start gap-4">
                   <Globe className="mt-0.5 size-6 shrink-0 text-[#008B8B]" />
                   <div>
-                    <h2 className="font-sans text-lg sm:text-2xl font-semibold text-[#003F3F]">
+                    <h2 className="font-sans text-lg font-semibold text-[#003F3F] sm:text-2xl">
                       Find us on social media
                     </h2>
-                    <p className="mt-2  leading-relaxed text-muted-foreground font-normal text-xs sm:text-base text-justify">
+                    <p className="mt-2 text-justify text-xs leading-relaxed font-normal text-muted-foreground sm:text-base">
                       Engage with our community and keep your business at the
                       forefront.
                     </p>
@@ -147,7 +147,7 @@ export function BookDemoContactSection() {
 
             <form
               onSubmit={handleSubmit}
-              className="flex h-auto w-full min-w-0 max-w-172 flex-col justify-between gap-4 overflow-hidden lg:h-153"
+              className="flex h-auto w-full max-w-172 min-w-0 flex-col justify-between gap-4 overflow-hidden lg:h-153"
             >
               <div className="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2">
                 <FormField
@@ -225,7 +225,9 @@ export function BookDemoContactSection() {
                   <Input
                     id="company"
                     value={form.company}
-                    onChange={(event) => setField("company")(event.target.value)}
+                    onChange={(event) =>
+                      setField("company")(event.target.value)
+                    }
                     placeholder="Company Name"
                     className={fieldClass}
                     required
@@ -243,7 +245,7 @@ export function BookDemoContactSection() {
                   value={form.message}
                   onChange={(event) => setField("message")(event.target.value)}
                   placeholder="Message"
-                  className="min-h-24 min-w-0 w-full flex-1 rounded-md bg-[#FFFFFF] border border-[#C5C5C5] px-4 py-3 text-base shadow-none md:text-base"
+                  className="min-h-24 w-full min-w-0 flex-1 rounded-md border border-[#C5C5C5] bg-[#FFFFFF] px-4 py-3 text-base shadow-none md:text-base"
                   required
                 />
               </FormField>

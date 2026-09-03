@@ -9,14 +9,14 @@ export function EmployersHeroSection() {
   return (
     <>
       <div className="bg-hero">
-        <Container className="flex h-30 items-center gap-2 font-sans text-[16px] leading-6 text-[#48484A]">
+        <Container className="flex h-30 items-center gap-2 font-sans text-[16px] leading-6 text-muted-foreground">
           <Link
             href="/"
-            className="font-normal text-[#48484A]/50 transition-colors hover:text-[#48484A]"
+            className="font-normal text-muted-foreground/50 transition-colors hover:text-muted-foreground"
           >
             Home
           </Link>
-          <ChevronRight className="size-4 shrink-0 text-[#48484A]" />
+          <ChevronRight className="size-4 shrink-0 text-muted-foreground" />
           <span className="font-semibold">For Employers</span>
         </Container>
       </div>

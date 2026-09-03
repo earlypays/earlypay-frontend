@@ -44,10 +44,10 @@ export function EmployersSupportSection() {
                   height={56}
                   className="size-14"
                 />
-                <h3 className="font-sans text-lg font-semibold text-[#48484A] lg:text-2xl">
+                <h3 className="font-sans text-lg font-semibold text-muted-foreground lg:text-2xl">
                   {feature.title}
                 </h3>
-                <p className="text-justify font-sans text-sm leading-relaxed font-normal text-[#48484A] sm:text-xl">
+                <p className="text-justify font-sans text-sm leading-relaxed font-normal text-muted-foreground sm:text-xl">
                   {feature.description}
                 </p>
               </li>

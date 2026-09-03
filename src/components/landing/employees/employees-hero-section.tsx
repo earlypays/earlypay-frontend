@@ -11,14 +11,14 @@ export function EmployeesHeroSection() {
   return (
     <>
       <div className="bg-hero">
-        <Container className="flex h-30 items-center gap-2 font-sans text-[16px] leading-6 text-[#48484A]">
+        <Container className="flex h-30 items-center gap-2 font-sans text-[16px] leading-6 text-muted-foreground">
           <Link
             href="/"
-            className="font-normal text-[#48484A]/50 transition-colors hover:text-[#48484A]"
+            className="font-normal text-muted-foreground/50 transition-colors hover:text-muted-foreground"
           >
             Home
           </Link>
-          <ChevronRight className="size-4 shrink-0 text-[#48484A]" />
+          <ChevronRight className="size-4 shrink-0 text-muted-foreground" />
           <span className="font-semibold">For Employees</span>
         </Container>
       </div>
@@ -33,7 +33,7 @@ export function EmployeesHeroSection() {
               transition={{ duration: 0.45 }}
             >
               <div className="mb-10 space-y-5">
-                <h1 className="font-georgia text-[2.35rem] leading-[1.15] font-bold tracking-tight text-[#48484A] lg:text-[56px] lg:leading-16">
+                <h1 className="font-georgia text-[2.35rem] leading-[1.15] font-bold tracking-tight text-muted-foreground lg:text-[56px] lg:leading-16">
                   Get more flexibility from the{" "}
                   <span className="text-[#008B8B]">
                     money you&apos;ve already earned.

@@ -47,7 +47,7 @@ export function EmployeesAccessSection() {
                 <Lightbulb className="size-5" />
               </span>
               <div className="space-y-4">
-                <h3 className="font-sans text-sm font-semibold text-[#48484A] sm:text-xl">
+                <h3 className="font-sans text-sm font-semibold text-muted-foreground sm:text-xl">
                   The 50% Access Rule
                 </h3>
                 <p className="text-sm leading-relaxed font-normal text-muted-foreground sm:text-base">

@@ -5,6 +5,8 @@ export { HowItWorksSection } from "./how-it-works-section";
 export { PartnersSection } from "./partners-section";
 export { BookDemoSection } from "./book-demo-section";
 export { BookDemoContactSection } from "./book-demo-contact-section";
+export { TermsSection } from "./terms-section";
+export { PrivacySection } from "./privacy-section";
 export { ControlFeaturesSection } from "./control-features-section";
 export { FaqSection } from "./faq-section";
 export { Footer } from "./footer";
@@ -15,6 +17,12 @@ export {
   EmployeesAccessSection,
   EmployeesCtaSection,
 } from "./employees";
+export {
+  AboutHeroSection,
+  AboutMissionSection,
+  AboutFounderSection,
+  AboutStorySection,
+} from "./about";
 export {
   EmployersHeroSection,
   EmployersSupportSection,

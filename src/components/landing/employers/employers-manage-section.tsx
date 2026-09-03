@@ -26,7 +26,7 @@ export function EmployersManageSection() {
             <h2 className="font-georgia text-3xl leading-tight font-bold text-[#003F3F] sm:text-4xl lg:text-[3.5rem]">
               Manage your employees with ease.
             </h2>
-            <p className="mt-4 font-sans text-base leading-relaxed text-[#48484A] sm:text-xl">
+            <p className="mt-4 font-sans text-base leading-relaxed text-muted-foreground sm:text-xl">
               Keep your employee information organized and maintain control over
               who can access earned wages.
             </p>
