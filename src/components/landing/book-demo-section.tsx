@@ -11,8 +11,8 @@ export function BookDemoSection() {
       className="relative scroll-mt-24 overflow-hidden bg-[#1a1f1e]"
       data-aos="fade-up"
     >
-      <div className="grid min-h-105 lg:min-h-120 lg:grid-cols-3">
-        <div className="relative z-10 col-span-2 flex flex-col items-center justify-center space-y-4 px-5 py-16 text-center sm:px-10 lg:px-16 xl:px-24">
+      <div className="grid min-h-105 grid-cols-1 lg:min-h-120 lg:grid-cols-3">
+        <div className="relative z-10 flex flex-col items-center justify-center space-y-4 px-5 py-16 text-center sm:px-10 lg:col-span-2 lg:px-16 xl:px-24">
           <h2 className="font-serif text-3xl leading-tight font-bold text-white sm:text-4xl lg:text-[3.5rem]">
             You&apos;ve earned it. Access it when you need it.
           </h2>

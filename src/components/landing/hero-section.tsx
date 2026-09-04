@@ -60,14 +60,14 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <OptimizedImage
-              src="/landing/Hero-Mockup.svg"
-              alt="EarlyPay dashboard"
-              width={1600}
-              height={1200}
+              src="/landing/main-hero.png"
+              alt="EarlyPay employee dashboard on desktop and mobile"
+              width={734}
+              height={578}
               quality={IMAGE_QUALITY_SHARP}
               priority
               sizes="(max-width: 1024px) 90vw, 52vw"
-              className="h-auto w-full drop-shadow-[0_24px_60px_rgba(16,70,64,0.16)]"
+              className="h-auto w-full"
             />
           </motion.div>
         </div>

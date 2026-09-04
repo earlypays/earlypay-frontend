@@ -75,8 +75,8 @@ export function EmployeesHeroSection() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <OptimizedImage
-                src="/landing/employees/hero2.png"
-                alt="EarlyPay app showing available balance and quick actions"
+                src="/landing/employees/employee-hero.png"
+                alt="EarlyPay employee app showing today's attendance and earnings"
                 width={567}
                 height={448}
                 quality={IMAGE_QUALITY_SHARP}
