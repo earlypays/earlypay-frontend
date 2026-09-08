@@ -73,7 +73,7 @@ export function DashboardSidebar({
         ) : null}
       </div>
 
-      <nav className="flex-1 space-y-1 overflow-y-auto px-3 py-2">
+      <nav className="flex-1 space-y-2.5 overflow-y-auto px-3 py-2">
         {DASHBOARD_NAV.map((item) => {
           const Icon = iconByHref[item.href] ?? LayoutDashboard;
           const active =
@@ -87,7 +87,7 @@ export function DashboardSidebar({
               href={item.href}
               onClick={onNavigate}
               className={cn(
-                "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
+                "flex items-center gap-3 rounded-lg px-3 py-3.5 text-sm font-medium transition-colors",
                 active
                   ? "bg-[#008B8B] text-white"
                   : "text-white/80 hover:bg-white/10 hover:text-white",
@@ -99,7 +99,7 @@ export function DashboardSidebar({
           );
         })}
 
-        <p className="mt-6 px-3 pb-2 text-[11px] font-semibold tracking-wider text-white/45 uppercase">
+        <p className="mt-8 px-3 pt-2 pb-1 text-[11px] font-semibold tracking-wider text-white/45 uppercase">
           Account
         </p>
         {DASHBOARD_ACCOUNT_NAV.map((item) => {
@@ -111,7 +111,7 @@ export function DashboardSidebar({
               href={item.href}
               onClick={onNavigate}
               className={cn(
-                "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
+                "flex items-center gap-3 rounded-lg px-3 py-3.5 text-sm font-medium transition-colors",
                 active
                   ? "bg-[#008B8B] text-white"
                   : "text-white/80 hover:bg-white/10 hover:text-white",
@@ -125,7 +125,7 @@ export function DashboardSidebar({
         <button
           type="button"
           onClick={() => setIsLogoutModalOpen(true)}
-          className="flex w-full cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 hover:text-white"
+          className="flex w-full cursor-pointer items-center gap-3 rounded-lg px-3 py-3.5 text-sm font-medium text-white/80 hover:bg-white/10 hover:text-white"
         >
           <LogOut className="size-4" />
           Logout
