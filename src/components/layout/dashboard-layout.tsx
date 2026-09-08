@@ -1,15 +1,15 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { useRouter } from "next/router";
 
 import { tokenStorage } from "@/lib/token-storage";
+import { DashboardBottomNav } from "./dashboard-bottom-nav";
 import { DashboardHeader } from "./dashboard-header";
 import { DashboardSidebar } from "./dashboard-sidebar";
 
 export function DashboardLayout({ children }: { children: ReactNode }) {
   const router = useRouter();
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     if (!tokenStorage.isAuthenticated()) {
@@ -18,35 +18,17 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
   }, [router]);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-[#F4F7F6]">
+    <div className="flex h-screen overflow-hidden bg-[#F5F6F7]">
       <div className="hidden md:block">
         <DashboardSidebar />
       </div>
 
-      {isSidebarOpen ? (
-        <div className="fixed inset-0 z-40 flex md:hidden">
-          <div className="h-full">
-            <DashboardSidebar
-              onNavigate={() => setIsSidebarOpen(false)}
-              showClose
-            />
-          </div>
-          <button
-            type="button"
-            className="flex-1 cursor-pointer bg-black/30"
-            aria-label="Close sidebar"
-            onClick={() => setIsSidebarOpen(false)}
-          />
-        </div>
-      ) : null}
-
       <div className="flex flex-1 flex-col overflow-hidden">
-        <DashboardHeader
-          onToggleSidebar={() => setIsSidebarOpen((prev) => !prev)}
-        />
-        <main className="flex-1 overflow-x-hidden overflow-y-auto p-4 md:p-6">
+        <DashboardHeader />
+        <main className="flex-1 overflow-x-hidden overflow-y-auto p-4 pb-24 md:p-6">
           {children}
         </main>
+        <DashboardBottomNav />
       </div>
     </div>
   );

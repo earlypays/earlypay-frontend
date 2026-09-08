@@ -181,7 +181,9 @@ export default function DashboardPage() {
                 href={action.href}
                 className="flex flex-col items-center gap-2 rounded-xl bg-white px-3 py-5 text-center shadow-[0_8px_24px_rgba(16,70,64,0.06)] transition-colors hover:bg-[#F7FBFB]"
               >
-                <Icon className="size-6 text-[#1B1B1B]" strokeWidth={1.5} />
+                <span className="flex size-11 items-center justify-center rounded-full bg-[#E6F3F3]">
+                  <Icon className="size-6 text-[#1B1B1B]" strokeWidth={1.5} />
+                </span>
                 <span className="text-sm font-medium text-[#1B1B1B]">
                   {action.label}
                 </span>
@@ -205,7 +207,7 @@ export default function DashboardPage() {
           </Link>
         </div>
         <ul>
-          {DEMO_ACTIVITY.map((item) => (
+          {DEMO_ACTIVITY.slice(0, 2).map((item) => (
             <li
               key={item.id}
               className="flex items-center justify-between gap-3 border-b border-[#F0F0F0] px-5 py-4 last:border-b-0"

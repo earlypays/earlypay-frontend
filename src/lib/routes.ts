@@ -14,6 +14,18 @@ export const DASHBOARD_NAV = [
   { href: "/dashboard/transactions", label: "Transaction History" },
 ] as const;
 
+export const DASHBOARD_BOTTOM_NAV = [
+  { href: "/dashboard", label: "Overview" },
+  { href: "/dashboard/attendance", label: "Attendance" },
+  { href: "/dashboard/withdraw", label: "Withdraw" },
+  { href: "/dashboard/bills", label: "Pay Bills" },
+] as const;
+
+export const DASHBOARD_MORE_NAV = [
+  { href: "/dashboard/transactions", label: "Transaction History" },
+  { href: "/dashboard/settings", label: "Settings" },
+] as const;
+
 export const DASHBOARD_ACCOUNT_NAV = [
   { href: "/dashboard/settings", label: "Settings" },
 ] as const;

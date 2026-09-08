@@ -89,7 +89,7 @@ export function DashboardSidebar({
               className={cn(
                 "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
                 active
-                  ? "bg-[#008B8B] text-white shadow-[inset_3px_0_0_0_#fff]"
+                  ? "bg-[#008B8B] text-white"
                   : "text-white/80 hover:bg-white/10 hover:text-white",
               )}
             >
@@ -113,7 +113,7 @@ export function DashboardSidebar({
               className={cn(
                 "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
                 active
-                  ? "bg-[#008B8B] text-white shadow-[inset_3px_0_0_0_#fff]"
+                  ? "bg-[#008B8B] text-white"
                   : "text-white/80 hover:bg-white/10 hover:text-white",
               )}
             >
