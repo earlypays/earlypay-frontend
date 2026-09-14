@@ -51,7 +51,7 @@ export function DashboardHeader() {
         <a
           href={`mailto:${FOOTER_EMAIL}`}
           aria-label="Contact support"
-          className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-[#1B1B1B] hover:bg-[#F5F6F7]"
+          className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-[#1B1B1B] hover:bg-[#F5F6F7] md:hidden"
         >
           <Headphones className="size-5" strokeWidth={1.75} />
         </a>

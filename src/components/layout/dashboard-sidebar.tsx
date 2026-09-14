@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   LayoutDashboard,
-  CalendarDays,
+  Hourglass,
   Wallet,
   Receipt,
   History,
@@ -28,7 +28,7 @@ import { cn } from "@/lib/utils";
 
 const iconByHref: Record<string, typeof LayoutDashboard> = {
   "/dashboard": LayoutDashboard,
-  "/dashboard/attendance": CalendarDays,
+  "/dashboard/attendance": Hourglass,
   "/dashboard/withdraw": Wallet,
   "/dashboard/bills": Receipt,
   "/dashboard/transactions": History,
