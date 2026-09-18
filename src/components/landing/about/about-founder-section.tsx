@@ -27,7 +27,7 @@ export function AboutFounderSection() {
               workforce.&rdquo;
             </p>
             <p className="mt-6 font-sans text-base font-semibold text-muted-foreground sm:text-xl">
-              — Anthony Ikechukwu Ohanyerem
+              - Anthony Ikechukwu Ohanyerem
             </p>
             <p className="mt-1 font-sans text-sm text-muted-foreground sm:text-base">
               Founder of EarlyPay
